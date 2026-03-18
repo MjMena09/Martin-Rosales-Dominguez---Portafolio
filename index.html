@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jimena Villalobos Orduña | Portafolio</title>
+<title>Martin Rosales Dominguez | Portafolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -37,7 +37,6 @@ header{
   justify-content:center;
   align-items:center;
   text-align:center;
-  /* 🔴 IMAGEN DE FONDO REEMPLAZADA */
   background-image:url("https://github.com/MjMena09/Jimena-Villalobos-Orduna/blob/main/Public/Images/Background/Background_1.jpeg?raw=true");
   background-size:cover;
   background-position:center;
@@ -70,7 +69,6 @@ header p{
   margin-top:50px;
 }
 
-/* proyecto individual */
 .project{
   position:relative;
   overflow:hidden;
@@ -90,27 +88,27 @@ header p{
   filter:brightness(.35);
 }
 
-/* ===================== POPUP REAL ===================== */
+/* 🔥 POPUP CORREGIDO (FUNCIONA BIEN) */
 .project-popup{
-  position:fixed; /* 🔹 ventana centrada en pantalla */
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%) scale(0.8);
-  width:90%;
-  max-width:600px;
-  background:rgba(0,0,0,0.95);
+  position:absolute; /* 🔴 CLAVE: ya no es fixed */
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   padding:25px;
-  border-radius:15px;
+
+  background:rgba(0,0,0,0.9);
   opacity:0;
   transition:.4s;
-  z-index:999;
-  pointer-events:none; /* para que solo aparezca con hover */
 }
 
 .project:hover .project-popup{
   opacity:1;
-  transform:translate(-50%,-50%) scale(1);
-  pointer-events:auto;
 }
 
 .project-popup h3{
@@ -121,12 +119,11 @@ header p{
   line-height:1.5;
 }
 
-/* galería dentro del popup */
+/* galería */
 .popup-gallery{
   display:flex;
   gap:10px;
   margin-top:15px;
-  justify-content:center;
 }
 
 .popup-gallery img{
@@ -164,15 +161,15 @@ footer{
 
 <header>
   <h1>Martin Rosales Dominguez</h1>
-  <p>Guionismo • Direction • Edicion</p>
+  <p>Guionismo • Dirección • Edición</p>
 </header>
 
 <section class="about">
 <h2>Sobre mí</h2>
 <p>
-🔴 INSERTAR TEXTO AQUI  
-🔴 INSERTAR TEXTO AQUI  
-🔴 INSERTAR TEXTO AQUI
+Soy guionista y creador audiovisual enfocado en narrativa visual, dirección y edición.  
+Me interesa construir historias con identidad, ritmo y una intención clara, explorando tanto lo emocional como lo técnico dentro del lenguaje cinematográfico.  
+Trabajo desde el concepto hasta la ejecución, buscando siempre proyectos que conecten con la audiencia y transmitan una visión sólida.
 </p>
 </section>
 
@@ -181,12 +178,10 @@ footer{
 
 <div class="projects-grid">
 
-  <!-- ===================== PROYECTO 1 ===================== -->
+  <!-- PROYECTO 1 -->
   <div class="project">
-    <!-- 🔴 IMAGEN PRINCIPAL DEL PROYECTO -->
     <img src="https://images.unsplash.com/photo-1526318472351-bc6c5a3a1a0f">
 
-    <!-- 🔹 POPUP -->
     <div class="project-popup">
       <h3>Proyecto 1</h3>
       <p>
@@ -194,18 +189,20 @@ footer{
       Descripción del proyecto  
       🔴 INSERTAR TEXTO AQUI
       </p>
-      <!-- 🔹 GALERÍA DEL POPUP -->
+
       <div class="popup-gallery">
-        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f"> <!-- 🔴 REEMPLAZAR -->
-        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32"> <!-- 🔴 REEMPLAZAR -->
-        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"> <!-- 🔴 REEMPLAZAR -->
+        <!-- 🔴 REEMPLAZA ESTAS IMÁGENES -->
+        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
       </div>
     </div>
   </div>
 
-  <!-- ===================== PROYECTO 2 ===================== -->
+  <!-- PROYECTO 2 -->
   <div class="project">
     <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+
     <div class="project-popup">
       <h3>Proyecto 2</h3>
       <p>
@@ -213,17 +210,19 @@ footer{
       Descripción del proyecto  
       🔴 INSERTAR TEXTO AQUI
       </p>
+
       <div class="popup-gallery">
-        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"> <!-- 🔴 REEMPLAZAR -->
-        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"> <!-- 🔴 REEMPLAZAR -->
-        <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f"> <!-- 🔴 REEMPLAZAR -->
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+        <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f">
       </div>
     </div>
   </div>
 
-  <!-- ===================== PROYECTO 3 ===================== -->
+  <!-- PROYECTO 3 -->
   <div class="project">
     <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+
     <div class="project-popup">
       <h3>Proyecto 3</h3>
       <p>
@@ -231,10 +230,11 @@ footer{
       Descripción del proyecto  
       🔴 INSERTAR TEXTO AQUI
       </p>
+
       <div class="popup-gallery">
-        <img src="https://images.unsplash.com/photo-1526318472351-bc6c5a3a1a0f"> <!-- 🔴 REEMPLAZAR -->
-        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f"> <!-- 🔴 REEMPLAZAR -->
-        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32"> <!-- 🔴 REEMPLAZAR -->
+        <img src="https://images.unsplash.com/photo-1526318472351-bc6c5a3a1a0f">
+        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32">
       </div>
     </div>
   </div>
@@ -245,13 +245,13 @@ footer{
 <section>
 <h2>Demo Reel</h2>
 <div class="reel-container">
-  <!-- 🔴 SOLO CAMBIA ESTE LINK POR TU VIDEO -->
+  <!-- 🔴 CAMBIA ESTE VIDEO -->
   <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
 </div>
 </section>
 
 <footer>
-<p>© 2026 Jimena Villalobos Orduña</p>
+<p>© 2026 Martin Rosales Dominguez</p>
 </footer>
 
 </body>
